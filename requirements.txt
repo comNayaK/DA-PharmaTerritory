@@ -1,0 +1,5 @@
+duckdb==1.4.5
+pandas==2.3.3
+scikit-learn==1.6.1
+numpy==1.26.4
+k-means-constrained==0.7.3
