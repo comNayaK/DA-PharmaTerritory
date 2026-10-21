@@ -1,0 +1,158 @@
+{
+  "comparison": {
+    "k": {
+      "naive": 224,
+      "band_only": 224,
+      "balanced": 224
+    },
+    "pct_within_960_1440": {
+      "naive": 58.9,
+      "band_only": 100.0,
+      "balanced": 100.0
+    },
+    "pct_within_1080_1320": {
+      "naive": 13.8,
+      "band_only": 8.5,
+      "balanced": 93.8
+    },
+    "cv": {
+      "naive": 0.195,
+      "band_only": 0.181,
+      "balanced": 0.05
+    },
+    "visits_min": {
+      "naive": 834.0,
+      "band_only": 960.0,
+      "balanced": 966.0
+    },
+    "visits_max": {
+      "naive": 1704.0,
+      "band_only": 1440.0,
+      "balanced": 1434.0
+    },
+    "visits_median": {
+      "naive": 1197.0,
+      "band_only": 1179.0,
+      "balanced": 1200.0
+    },
+    "visits_mean": {
+      "naive": 1197.857,
+      "band_only": 1197.857,
+      "balanced": 1197.857
+    },
+    "n_territories_at_lower_bound": {
+      "naive": null,
+      "band_only": 33,
+      "balanced": 0
+    },
+    "n_at_upper_bound": {
+      "naive": null,
+      "band_only": 28,
+      "balanced": 0
+    },
+    "n_within_5pct_of_a_bound": {
+      "naive": null,
+      "band_only": 188,
+      "balanced": 10
+    },
+    "n_zips_split_across_territories": {
+      "naive": 131,
+      "band_only": 0,
+      "balanced": 0
+    },
+    "n_hcps_in_split_zips": {
+      "naive": 697,
+      "band_only": 0,
+      "balanced": 0
+    },
+    "n_territories_crossing_state_lines": {
+      "naive": 101,
+      "band_only": 105,
+      "balanced": 91
+    },
+    "mean_distance_to_centroid_km": {
+      "naive": 36.66,
+      "band_only": 42.7,
+      "balanced": 44.45
+    },
+    "p90_distance_to_centroid_km": {
+      "naive": 78.72,
+      "band_only": 93.65,
+      "balanced": 96.42
+    },
+    "max_territory_radius_km": {
+      "naive": 557.12,
+      "band_only": 602.59,
+      "balanced": 868.39
+    }
+  },
+  "naive": {
+    "k": 224,
+    "hcp_count": 15919,
+    "assigned": 15793,
+    "unassigned": 126,
+    "dropped_pct": 0.7915,
+    "visits_min": 834.0,
+    "visits_median": 1197.0,
+    "visits_max": 1704.0,
+    "visits_mean": 1197.857,
+    "cv": 0.195,
+    "pct_within_960_1440": 58.9,
+    "pct_within_1080_1320": 13.8,
+    "n_territories_crossing_state_lines": 101,
+    "n_zips_split_across_territories": 131,
+    "n_hcps_in_split_zips": 697,
+    "mean_hcp_distance_to_centroid_km": 36.66,
+    "p90_hcp_distance_to_centroid_km": 78.72,
+    "max_territory_radius_km": 557.12
+  },
+  "balanced": {
+    "k": 224,
+    "hcp_count": 15919,
+    "assigned": 15793,
+    "unassigned": 126,
+    "dropped_pct": 0.7915,
+    "visits_min": 966.0,
+    "visits_median": 1200.0,
+    "visits_max": 1434.0,
+    "visits_mean": 1197.857,
+    "cv": 0.05,
+    "pct_within_960_1440": 100.0,
+    "pct_within_1080_1320": 93.8,
+    "n_territories_crossing_state_lines": 91,
+    "n_zips_split_across_territories": 0,
+    "n_hcps_in_split_zips": 0,
+    "n_territories_at_lower_bound": 0,
+    "n_at_upper_bound": 0,
+    "n_within_5pct_of_a_bound": 10,
+    "mean_hcp_distance_to_centroid_km": 44.45,
+    "p90_hcp_distance_to_centroid_km": 96.42,
+    "max_territory_radius_km": 868.39,
+    "penalty_weight": 1200.0,
+    "runtime_seconds": 5.87
+  },
+  "band_only": {
+    "k": 224,
+    "hcp_count": 15919,
+    "assigned": 15793,
+    "unassigned": 126,
+    "dropped_pct": 0.7915,
+    "visits_min": 960.0,
+    "visits_median": 1179.0,
+    "visits_max": 1440.0,
+    "visits_mean": 1197.857,
+    "cv": 0.181,
+    "pct_within_960_1440": 100.0,
+    "pct_within_1080_1320": 8.5,
+    "n_territories_crossing_state_lines": 105,
+    "n_zips_split_across_territories": 0,
+    "n_hcps_in_split_zips": 0,
+    "n_territories_at_lower_bound": 33,
+    "n_at_upper_bound": 28,
+    "n_within_5pct_of_a_bound": 188,
+    "mean_hcp_distance_to_centroid_km": 42.7,
+    "p90_hcp_distance_to_centroid_km": 93.65,
+    "max_territory_radius_km": 602.59,
+    "runtime_seconds": "not re-measured"
+  }
+}
