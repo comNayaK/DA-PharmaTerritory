@@ -1,0 +1,75 @@
+--- QA Check 1. Uniqueness & Duplicate Check ---
+   agg_rows  agg_distinct  nppes_rows  nppes_distinct
+0    181120        181120     7466978         7466978
+
+
+--- QA Check 2. Valid ZIP Match Rate ---
+   nppes_valid_zip_rate
+0             99.261263
+
+
+--- QA Check 3. ZCTA Match Rate (Primary Targets only) ---
+   zcta_match_rate
+0        99.208493
+
+
+--- QA Check 4. Staging Drug Audit ---
+        generic_drug_name  count_star()
+0    Atorvastatin Calcium        178799
+1    Rosuvastatin Calcium        137367
+2             Simvastatin        121996
+3      Pravastatin Sodium        106135
+4              Lovastatin         53536
+5    Pitavastatin Calcium          5301
+6      Fluvastatin Sodium           304
+7  Pitavastatin Magnesium            76
+
+
+--- QA Check 5. Decile Sanity Check ---
+            specialty  decile    pct_vol
+0          Cardiology       1   9.999589
+1          Cardiology       2   9.998295
+2          Cardiology       3   9.999947
+3          Cardiology       4  10.000211
+4          Cardiology       5   9.996051
+5          Cardiology       6   9.999458
+6          Cardiology       7  10.000740
+7          Cardiology       8   9.994995
+8          Cardiology       9  10.000049
+9          Cardiology      10  10.010665
+10    Family Practice       1   9.999952
+11    Family Practice       2   9.999293
+12    Family Practice       3   9.999650
+13    Family Practice       4   9.999622
+14    Family Practice       5  10.001137
+15    Family Practice       6   9.999284
+16    Family Practice       7   9.999118
+17    Family Practice       8  10.001841
+18    Family Practice       9   9.996145
+19    Family Practice      10  10.003958
+20  Internal Medicine       1   9.999531
+21  Internal Medicine       2   9.999212
+22  Internal Medicine       3  10.000311
+23  Internal Medicine       4   9.999890
+24  Internal Medicine       5   9.999241
+25  Internal Medicine       6   9.999701
+26  Internal Medicine       7  10.001465
+27  Internal Medicine       8   9.996414
+28  Internal Medicine       9   9.999598
+29  Internal Medicine      10  10.004636
+
+
+--- QA Check 6. Unassigned Targets ---
+   unassigned_primary_targets  dropped_pct  dropped_visits
+0                         126     0.791507          2076.0
+
+
+--- QA Check 6b. Primary Target Count Integrity Check ---
+   roster_primary_count  mart_primary_count status_6b
+0                 15919               15919      PASS
+
+
+--- QA Check 6c. State Representation Check ---
+   roster_states_count  mart_states_count status_6c
+0                   49                 49      PASS
+
